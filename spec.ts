@@ -106,9 +106,8 @@ fdescribe('Search ', async function(){
     await searchField.sendKeys(searchUnexistingFilm)
     await searchButton.click()
     await browser.sleep(3000)
-    expect(await MoviesName.getText()).nothing()
-    // is it correct to use this type of matcher?
-    console.log(await MoviesName.getText())
+    expect(await MoviesName.count()).toEqual(0)
+    console.log(await MoviesName.count())
   })
 })
 
