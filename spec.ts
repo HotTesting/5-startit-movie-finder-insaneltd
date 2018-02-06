@@ -66,7 +66,7 @@ describe('Navigation ',async function() {
 
 
 // Search
-fdescribe('Search ', async function(){
+describe('Search ', async function(){
 
   it('by exisiting name, should show first movie with complete name match', async function(){
     let searchFilmName = 'Fight Club'
@@ -96,7 +96,7 @@ fdescribe('Search ', async function(){
     // not all films in search results has search request
   })
 
-  fit('result should be empty, after request for nonexistent movie', async function(){
+  it('result should be empty, after request for nonexistent movie', async function(){
     let searchUnexistingFilm = '43fer4'
     let searchField = $$('[name="searchStr"]')
     let searchButton = $('.input-group-btn')
