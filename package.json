@@ -12,6 +12,7 @@
     "@types/jasmine": "^2.5.47",
     "typescript": "^2.6.2",
     "ts-node": "^4.1.0",
-    "protractor": "^5.2.2"
+    "protractor": "^5.2.2",
+    "jasmine2-reporter": "^0.2.0"
   }
 }
