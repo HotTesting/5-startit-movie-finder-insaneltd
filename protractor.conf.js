@@ -1,7 +1,7 @@
 require('ts-node').register();
 
 module.exports.config = {
-    specs: ['spec.ts'],
+    specs: ['spec_wait.ts'],
 //    directConnect: true,
     capabilities: {
         browserName: 'chrome',
