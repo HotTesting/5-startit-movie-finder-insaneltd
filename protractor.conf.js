@@ -2,7 +2,13 @@ require('ts-node').register();
 
 module.exports.config = {
     specs: ['spec.ts'],
-    directConnect: true,
+//    directConnect: true,
+    capabilities: {
+        browserName: 'chrome',
+        enableVNC: true,
+        name: "YOUR NAME HERE" // Just to identify your session between others on selenoid ui
+    },
+
     baseUrl: 'https://movies-finder.firebaseapp.com/',
     SELENIUM_PROMISE_MANAGER: false,
     onPrepare: function() {
